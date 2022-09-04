@@ -1,0 +1,13 @@
+@use "../global" as *;
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: $background;
+  list-style: none;
+
+  img {
+    width: 100%;
+  }
+}

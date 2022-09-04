@@ -1,0 +1,18 @@
+@use "../global" as *;
+
+.p-sns {
+  display: flex;
+  @include tab {
+    margin-top: 44px;
+    margin-left: 39px;
+  }
+  @include tab {
+    margin-left: 0px;
+  }
+  > :nth-child(1) {
+    margin-right: 20px;
+  }
+  > :nth-child(2) {
+    margin-right: 27px;
+  }
+}

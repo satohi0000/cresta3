@@ -1,0 +1,25 @@
+@use "../global" as *;
+
+.p-top {
+  height: 450px;
+  @include tab {
+    height: 360px;
+  }
+  position: relative;
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  h1 {
+    font-style: italic;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    @include tab {
+      top: 54%;
+    }
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -1,0 +1,43 @@
+@use "../global" as *;
+
+.p-fv {
+  height: 809px;
+  @include tab {
+    height: 550px;
+  }
+  position: relative;
+  img {
+    object-fit: cover;
+    height: 753px;
+    @include tab {
+      height: 600px;
+    }
+    width: 100%;
+  }
+  &__center {
+    position: absolute;
+    left: 8%;
+    bottom: 29%;
+    @include tab {
+      left: 2%;
+      bottom: 28%;
+    }
+    color: #fff;
+    h1 {
+      margin-left: 0%;
+    }
+    h4 {
+      margin-top: 46px;
+      margin-left: 7%;
+      font-style: normal;
+      @include tab {
+        margin-top: 56px;
+        margin-left: 13%;
+        margin-right: 23%;
+        text-align: center;
+        line-height: 1.6;
+        width: 75%;
+      }
+    }
+  }
+}

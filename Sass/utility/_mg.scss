@@ -1,0 +1,37 @@
+@use "../global" as *;
+
+.u-mg {
+  &-1 {
+    @include tab {
+      margin-left: 15px;
+      margin-top: 111px;
+      padding-left: 0px !important;
+    }
+  }
+  &-2 {
+    margin-left: 20px;
+    margin-top: 410px;
+  }
+  &-3 {
+    @include tab {
+      margin-top: 80px;
+      margin-bottom: 0;
+    }
+  }
+  &-4 {
+    margin-top: 110px;
+    margin-left: 30px;
+    margin-bottom: 123px;
+    @include tab {
+      margin-bottom: 0;
+    }
+  }
+  &-5 {
+    margin-top: 90px;
+    padding-top: 0;
+  }
+}
+
+.slick-next {
+  right: 0px !important;
+}

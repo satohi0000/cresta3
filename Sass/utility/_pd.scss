@@ -1,0 +1,8 @@
+@use "../global" as *;
+
+.u-pd {
+  padding: 25px 0 92px 118px;
+  @include tab {
+    padding: 63px 0 66px 16px;
+  }
+}
