@@ -13,6 +13,7 @@ body {
   }
   h2 {
     @include f_style2(3.2, 94, 68);
+    font-family: $ff1;
   }
   h3 {
     @include f_style2(3.2, 39, 68);
@@ -21,12 +22,12 @@ body {
     @include f_style2(2, 86, 0);
   }
   p {
-    @include f_style2(1.6, 2, 0);
+    @include f_style2(1.6, 32, 0);
   }
   dt {
-    @include f_style2(1, 32, 15);
+    @include f_style2(1, 7, 15);
   }
   dd {
-    @include f_style2(1.4, 94, 4);
+    @include f_style2(1.4, 36.4, 4);
   }
 }

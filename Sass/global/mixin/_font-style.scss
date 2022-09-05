@@ -2,7 +2,7 @@
   font-size: $pixels * 1px;
 
   @if $height {
-    line-height: calc($height / $pixels) * 0.1;
+    line-height: calc($height / $pixels);
   }
 
   @if $spacing {

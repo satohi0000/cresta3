@@ -9,7 +9,7 @@
     right: 0;
   }
   &-list {
-    display: flex;
+    display: none;
     @include tab {
       position: fixed;
       top: 0;
@@ -23,11 +23,16 @@
     }
     &-item1 {
       margin-right: 34px;
+      z-index: 20;
+
       @include tab {
         margin-top: 30px;
         &:nth-of-type(1) {
           margin-top: 0;
         }
+      }
+      a {
+        color: $white;
       }
     }
   }
@@ -37,4 +42,5 @@
   left: 0;
   opacity: 1;
   flex-direction: column;
+  display: flex;
 }

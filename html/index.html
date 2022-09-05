@@ -25,35 +25,110 @@
   <body>
     <header class="l-header">
       <div class="l-header__inner">
-        <div class="l-header__inner__left">
-          <a href="#">
-            <img src="../画像/img/site-logo-1.png" alt="site-logo" />
-          </a>
+        <a href="#">
+          <img src="../画像/img/site-logo-1.png" alt="site-logo" />
+        </a>
+        <nav class="l-header-nav">
+          <ul class="p-nav-list">
+            <li class="p-nav-list-item1"><a href="#about">Concept</a></li>
+            <li class="p-nav-list-item1"><a href="#Service">Service</a></li>
+            <li class="p-nav-list-item1"><a href="#Works">Works</a></li>
+            <li class="p-nav-list-item1"><a href="#Contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="p-mask"></div>
+        <div id="c-BTN1" class="c-ham-btn">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <div class="l-header__inner__right">
-          <div id="c-BTN1" class="c-ham-btn">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <p class="l-header__inner__right-p">MENU</p>
-        </div>
+        <p class="l-header__inner__right-p">MENU</p>
       </div>
     </header>
     <main>
       <div class="l-contents">
         <div class="p-fv">
           <div class="p-fv__wrapper"></div>
-
           <div class="p-fv__tex">
             <p class="p-fv__p1">デザインで人を笑顔にする会社</p>
             <p class="p-fv__p2">DIGSMILE INC.</p>
-            <h1>DESIGN FOR SMILE.</h1>
+            <h1>DESIGN<br />FOR<br />SMILE.</h1>
           </div>
         </div>
+        <div class="p-article__aboutus f-wrapper">
+          <div class="p-article__aboutus-box">
+            <h2>ABOUT US</h2>
+            <p>
+              DIGSMILEは、デザインで人を笑顔にする会社。<br />
+              なんでもない日常に少しのワクワクと遊び心を提供します。笑顔には世界を変える力がある、デザインには人を幸せにする力がある。毎日に幸せを感じて生きていきたい。<br />
+              DIGSMILEの社名にはそんな想いが込められています。<br />
+            </p>
+            <button class="c-button">READ MORE</button>
+          </div>
+        </div>
+        <div class="p-article__2colum-bg">
+          <div class="p-article__2colum f-wrapper">
+            <article class="p-article__2colum-left">
+              <h2>WORKS</h2>
+              <img
+                src="../画像/img/daria-shevtsova-k_RYBedEvDw-unsplash-1.png"
+                alt="daria-shevtsova-k_RYBedEvDw-unsplash-1"
+              />
+              <p>DIGSMILEの制作実績を紹介します。</p>
+              <a href="#">
+                <button class="c-button">READ MORE</button>
+              </a>
+            </article>
+            <article class="p-article__2colum-right">
+              <h2>CULTURE</h2>
+              <img
+                src="../画像/img/timon-studler-BIk-1.png"
+                alt="daria-shevtsova-k_RYBedEvDw-unsplash-1"
+              />
+              <p>DIGSMILEの社内文化について紹介します。</p>
+              <a href="#">
+                <button class="c-button">READ MORE</button>
+              </a>
+            </article>
+          </div>
+        </div>
+        <div class="p-articl__latest">
+          <div class="p-article__latest-box f-wrapper">
+            <h2>LATEST TOPICS</h2>
+            <dl>
+              <dt>2020.02.01</dt>
+              <dd>
+                イベントレポート「VRクリエイター座談会 〜5Gの次に来るもの〜」
+              </dd>
+              <dt>2020.01.18</dt>
+              <dd>プレスリリースのお知らせ DIGGIN’ RECORDS</dd>
+              <dt>2020.01.01</dt>
+              <dd>新年明けましておめでとうございます</dd>
+            </dl>
+            <button class="c-button">READ MORE</button>
+          </div>
+        </div>
+        <div class="p-article__2colum2-bg">
+          <article class="p-article__2colum2 f-wrapper">
+            <div class="p-article__2colum2-left">
+              <h2>CONTACT</h2>
+              <p>
+                制作の依頼、取材の依頼、IRや採用についての連絡・お問い合わせはコンタクトページから承っております。<br />
+                まずはお気軽にご連絡ください。担当者から改めて返信いたします。
+              </p>
+              <button class="c-button">READ MORE</button>
+            </div>
+            <div class="p-article__2colum2-right">
+              <img src="../画像/img/recruit-img.png" alt="recruit-img" />
+            </div>
+          </article>
+        </div>
       </div>
+      <footer class="l-footer">
+        <p>©2018 DIGSMILE INC.</p>
+      </footer>
     </main>
-
+    <script src="../js/jquery-3.6.0.js"></script>
     <script src="../js/style.js"></script>
   </body>
 </html>

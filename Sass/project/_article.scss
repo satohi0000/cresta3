@@ -1,4 +1,123 @@
 @use "../global" as *;
 
 .p-article {
+  &__aboutus {
+    margin-top: 96px;
+    padding: 113px 0;
+    background-image: url(../../画像/img/skyline-1.png);
+    background-size: cover;
+    background-position: center 0;
+    &::after {
+      content: "";
+      left: 0;
+      width: 100vw;
+      height: 160px;
+      display: block;
+      background-color: #f0f0f0;
+      position: absolute;
+      z-index: -1;
+    }
+    &-box {
+      background-color: $white;
+      height: 387px;
+      max-width: 590px;
+      margin-left: 50px;
+      h2 {
+        padding-top: 19px;
+        padding-left: 30px;
+      }
+      p {
+        padding-left: 30px;
+        font-family: $ff2;
+        width: 90%;
+      }
+      button {
+        margin: 30px 0 30px 30px;
+      }
+    }
+  }
+  &__2colum {
+    padding-bottom: 56px;
+    p {
+      margin-top: 17px;
+      margin-bottom: 3px;
+    }
+    &-left,
+    &-right {
+      button {
+        margin-top: 22px;
+      }
+    }
+    &-left {
+      width: 45%;
+    }
+    &-right {
+      width: 45%;
+      margin-left: 8%;
+    }
+    &-bg {
+      padding-top: 20px;
+      background-color: #f0f0f0;
+    }
+    img {
+      width: 520px;
+      height: 350px;
+    }
+    &2 {
+      padding-bottom: 110px;
+      &-left {
+        width: 40%;
+        h2 {
+          margin-top: 70px;
+        }
+        p {
+          margin-top: 0px;
+        }
+        button {
+          margin-top: 17px;
+        }
+      }
+      &-right {
+        width: 45%;
+        margin-left: 8%;
+        img {
+          margin-top: 38px;
+          width: 568px;
+          height: 384px;
+        }
+      }
+      &-bg {
+        margin-top: 58px;
+        background-color: #f0f0f0;
+      }
+    }
+  }
+  &__2colum,
+  &__2colum2 {
+    display: flex;
+    padding-top: 34px;
+  }
+  &__latest {
+    &-box {
+      margin-top: 32px;
+      dl {
+        width: 700px;
+        margin-left: inherit;
+      }
+      dt {
+        margin-top: 10px;
+        &:nth-of-type(2),
+        &:nth-of-type(3) {
+          margin-top: 36px;
+        }
+      }
+      dd {
+        border-bottom: 1px solid #dddddd;
+      }
+      button {
+        margin-left: inherit;
+        margin-top: 35px;
+      }
+    }
+  }
 }
