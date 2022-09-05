@@ -227,7 +227,7 @@ select {
 .l-footer {
   width: 100%;
   background-color: #525252;
-  padding: 10px;
+  padding: 10px 0;
 }
 .l-footer p {
   font-size: 10px;
@@ -264,9 +264,9 @@ select {
 }
 .l-header__inner__right-p {
   color: #fff;
-  line-height: 3;
+  margin-left: 97px;
   font-size: 0.5rem;
-  margin-top: 5px;
+  line-height: 1;
 }
 
 .is-fixed {
@@ -320,22 +320,21 @@ select {
   margin-top: 17px;
   margin-bottom: 3px;
 }
+.p-article__2colum-left, .p-article__2colum-right {
+  width: 47%;
+}
 .p-article__2colum-left button, .p-article__2colum-right button {
   margin-top: 22px;
 }
-.p-article__2colum-left {
-  width: 45%;
-}
 .p-article__2colum-right {
-  width: 45%;
-  margin-left: 8%;
+  margin-left: 6%;
+  width: 50%;
 }
 .p-article__2colum-bg {
   padding-top: 20px;
   background-color: #f0f0f0;
 }
 .p-article__2colum img {
-  width: 520px;
   height: 350px;
 }
 .p-article__2colum2 {
@@ -354,12 +353,11 @@ select {
   margin-top: 17px;
 }
 .p-article__2colum2-right {
-  width: 45%;
+  width: 50%;
   margin-left: 8%;
 }
 .p-article__2colum2-right img {
   margin-top: 38px;
-  width: 568px;
   height: 384px;
 }
 .p-article__2colum2-bg {
@@ -681,12 +679,13 @@ select {
 .c-ham-btn {
   color: #fff;
   position: absolute;
-  width: 0px;
+  width: 85px;
   height: 50px;
   z-index: 98;
   cursor: pointer;
   top: 38%;
-  right: 12%;
+  right: 5%;
+  padding: 0 17px 0 0;
 }
 @media (max-width: 768px) {
   .c-ham-btn {

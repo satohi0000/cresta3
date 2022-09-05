@@ -44,23 +44,21 @@
     }
     &-left,
     &-right {
+      width: 47%;
       button {
         margin-top: 22px;
       }
     }
-    &-left {
-      width: 45%;
-    }
+
     &-right {
-      width: 45%;
-      margin-left: 8%;
+      margin-left: 6%;
+      width: 50%;
     }
     &-bg {
       padding-top: 20px;
       background-color: #f0f0f0;
     }
     img {
-      width: 520px;
       height: 350px;
     }
     &2 {
@@ -78,11 +76,11 @@
         }
       }
       &-right {
-        width: 45%;
+        width: 50%;
         margin-left: 8%;
         img {
           margin-top: 38px;
-          width: 568px;
+
           height: 384px;
         }
       }
