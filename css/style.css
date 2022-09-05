@@ -1,13 +1,51 @@
-html {
-  font-size: 62.5%;
-}
-
+@charset "UTF-8";
 body {
   background-color: #fff;
   list-style: none;
 }
 body img {
   width: 100%;
+  object-fit: cover;
+}
+body h1 {
+  font-size: 7.2rem;
+  line-height: 1.1944444444;
+  letter-spacing: 0em;
+  font-family: "Montserrat", sans-serif;
+}
+body h2 {
+  font-size: 3.2rem;
+  line-height: 2.9375;
+  letter-spacing: 0.068em;
+}
+body h3 {
+  font-size: 3.2rem;
+  line-height: 1.21875;
+  letter-spacing: 0.068em;
+}
+body h4 {
+  font-size: 2rem;
+  line-height: 4.3;
+  letter-spacing: 0em;
+}
+body p {
+  font-size: 1.6rem;
+  line-height: 0.125;
+  letter-spacing: 0em;
+}
+body dt {
+  font-size: 1rem;
+  line-height: 3.2;
+  letter-spacing: 0.015em;
+}
+body dd {
+  font-size: 1.4rem;
+  line-height: 6.7142857143;
+  letter-spacing: 0.004em;
+}
+
+html {
+  font-size: 62.5% !important;
 }
 
 html,
@@ -183,9 +221,11 @@ select {
 .l-header__inner {
   display: flex;
   justify-content: space-between;
-  width: 86%;
+  width: 95%;
   height: 50px;
-  padding: 30px 5% 30px 8%;
+  padding: 23px 30px;
+  position: absolute;
+  z-index: 99;
   position: absolute;
   z-index: 99;
 }
@@ -193,6 +233,20 @@ select {
   .l-header__inner {
     padding: 40px 3%;
   }
+}
+.l-header__inner__left {
+  width: 260px;
+  padding-left: 20px;
+}
+.l-header__inner__right {
+  display: flex;
+}
+.l-header__inner__right-p {
+  color: #fff;
+  line-height: 3;
+  font-size: 0.5rem;
+  margin-right: 17px;
+  margin-top: 5px;
 }
 
 .is-fixed {
@@ -289,53 +343,57 @@ select {
 }
 
 .p-fv {
-  height: 809px;
-  position: relative;
+  height: 100vh;
 }
-@media (max-width: 768px) {
-  .p-fv {
-    height: 550px;
-  }
+.p-fv__wrapper {
+  height: 51%;
+  width: 76.4%;
+  background-image: url(../../画像/img/the-honest-company-uM-WXMr-1.png);
+  background-size: cover;
+  background-position: center 0;
 }
-.p-fv img {
-  object-fit: cover;
-  height: 753px;
-  width: 100%;
-}
-@media (max-width: 768px) {
-  .p-fv img {
-    height: 600px;
-  }
-}
-.p-fv__center {
+.p-fv::after {
+  content: "";
+  display: block;
   position: absolute;
-  left: 8%;
-  bottom: 29%;
+  top: 0;
+  right: 0;
+  background-color: #222;
+  width: 54%;
+  height: 59%;
+  z-index: -1;
+}
+.p-fv__a {
+  width: 76%;
+  height: 640px;
+  z-index: 2;
+}
+.p-fv__b {
+  max-width: 780px;
+  right: 0;
+  height: 735px;
+  z-index: 1;
+}
+.p-fv__tex {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
   color: #fff;
 }
-@media (max-width: 768px) {
-  .p-fv__center {
-    left: 2%;
-    bottom: 28%;
-  }
+.p-fv__p1 {
+  font-size: 20px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: bold;
+  line-height: 1.25;
+  color: #fff;
 }
-.p-fv__center h1 {
-  margin-left: 0%;
-}
-.p-fv__center h4 {
-  margin-top: 46px;
-  margin-left: 7%;
-  font-style: normal;
-}
-@media (max-width: 768px) {
-  .p-fv__center h4 {
-    margin-top: 56px;
-    margin-left: 13%;
-    margin-right: 23%;
-    text-align: center;
-    line-height: 1.6;
-    width: 75%;
-  }
+.p-fv__p2 {
+  font-size: 20px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: bold;
+  line-height: 1.25;
+  margin-bottom: 10px;
 }
 
 .p-top {
@@ -447,7 +505,7 @@ select {
   margin: 0 auto;
   border: none;
   font-size: 19px;
-  font-family: "Noto Serif", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-weight: bold;
 }
 .c-form__check {
@@ -515,14 +573,14 @@ select {
 }
 
 .c-ham-btn {
-  display: none;
+  color: #fff;
   position: absolute;
-  width: 30px;
+  width: 0px;
   height: 50px;
   z-index: 98;
   cursor: pointer;
-  top: 37px;
-  right: 0px;
+  top: 38%;
+  right: 175px;
 }
 @media (max-width: 768px) {
   .c-ham-btn {
@@ -531,17 +589,17 @@ select {
 }
 .c-ham-btn span {
   position: absolute;
-  left: 7px;
-  width: 36px;
-  height: 3px;
+  left: 66px;
+  width: 25px;
+  height: 2px;
   transition: all 0.4s;
   background-color: #fff;
 }
 .c-ham-btn span:nth-of-type(2) {
-  top: 8px;
+  top: 4.5px;
 }
 .c-ham-btn span:nth-of-type(3) {
-  top: 17px;
+  top: 9px;
 }
 
 .c-gmap {
@@ -565,10 +623,9 @@ select {
 }
 .c-pagenation li {
   padding: 0 20px;
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 14px;
-  font-weight: regular;
-  line-height: 1.5;
+  line-height: 0.15;
   letter-spacing: 0em;
 }
 

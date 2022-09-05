@@ -1,12 +1,8 @@
-@mixin f_style1($pixels, $weight: false, $height: false, $spacing: false) {
+@mixin f_style1($pixels, $height: false, $spacing: false) {
   font-size: $pixels * 1px;
 
-  @if $weight {
-    font-weight: $weight;
-  }
-
   @if $height {
-    line-height: calc($height / $pixels);
+    line-height: calc($height / $pixels) * 0.1;
   }
 
   @if $spacing {
@@ -14,15 +10,11 @@
   }
 }
 
-@mixin f_style2($pixels, $weight: false, $height: false, $spacing: false) {
+@mixin f_style2($pixels, $height: false, $spacing: false) {
   font-size: $pixels * 1rem;
 
-  @if $weight {
-    font-weight: $weight;
-  }
-
   @if $height {
-    line-height: calc($height / $pixels);
+    line-height: calc($height / $pixels / 10);
   }
 
   @if $spacing {

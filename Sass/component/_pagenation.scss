@@ -6,7 +6,7 @@
   margin: -5px;
   li {
     padding: 0 20px;
-    font-family: $font-family2;
-    @include f_style1(14, regular, 21, 0);
+    font-family: $ff2;
+    @include f_style1(14, 21, 0);
   }
 }

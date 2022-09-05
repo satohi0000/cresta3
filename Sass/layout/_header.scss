@@ -4,14 +4,30 @@
   &__inner {
     display: flex;
     justify-content: space-between;
-    width: 86%;
+    width: 95%;
     height: 50px;
-    padding: 30px 5% 30px 8%;
+    padding: 23px 30px;
+    position: absolute;
+    z-index: 99;
     @include tab {
       padding: 40px 3%;
     }
     position: absolute;
     z-index: 99;
+    &__left {
+      width: 260px;
+      padding-left: 20px;
+    }
+    &__right {
+      display: flex;
+      &-p {
+        color: $white;
+        line-height: 3;
+        font-size: 0.5rem;
+        margin-right: 17px;
+        margin-top: 5px;
+      }
+    }
   }
 }
 .is-fixed {

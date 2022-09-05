@@ -54,29 +54,29 @@
 }
 
 .c-ham-btn {
-  display: none;
+  color: $white;
   @include tab {
     display: flex;
   }
   position: absolute;
-  width: 30px;
+  width: 0px;
   height: 50px;
   z-index: 98;
   cursor: pointer;
-  top: 37px;
-  right: 0px;
+  top: 38%;
+  right: 175px;
   span {
     position: absolute;
-    left: 7px;
-    width: 36px;
-    height: 3px;
+    left: 66px;
+    width: 25px;
+    height: 2px;
     transition: all 0.4s;
     background-color: $white;
     &:nth-of-type(2) {
-      top: 8px;
+      top: 4.5px;
     }
     &:nth-of-type(3) {
-      top: 17px;
+      top: 9px;
     }
   }
 }
