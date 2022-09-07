@@ -3,9 +3,40 @@
 .p-fv {
   height: 760px;
   &__wrapper {
-    height: 84%;
-    width: 76.4%;
     background-image: url(../../画像/img/the-honest-company-uM-WXMr-1.png);
+    height: 84%;
+  }
+  &::after {
+    height: 748px;
+  }
+  &__tex {
+    top: 280px;
+    right: 23.5%;
+  }
+}
+
+.p-fv2 {
+  height: 494px;
+  h1 {
+    margin-top: 10px;
+  }
+  &__wrapper {
+    background-image: url(../../画像/img/jacek-dylag-PMxT-1.png);
+    height: 64%;
+  }
+  &::after {
+    height: 400px;
+  }
+  &__tex {
+    top: 150px;
+    right: 27.5%;
+  }
+}
+
+.p-fv,
+.p-fv2 {
+  &__wrapper {
+    width: 76.4%;
     background-size: cover;
     background-position: center 0;
   }
@@ -17,18 +48,15 @@
     right: 0;
     background-color: #222;
     width: 54%;
-    height: 748px;
     z-index: -1;
   }
   &__tex {
     position: absolute;
-    top: 280px;
-    right: 23.5%;
+
     transform: translate(50%, -50%);
     color: #fff;
   }
   &__p1 {
-    margin-top: 66px;
     font-size: 20px;
     font-family: $ff2;
     font-weight: bold;

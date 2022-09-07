@@ -271,13 +271,58 @@ select {
 
 .is-fixed {
   position: fixed;
-  background-color: #282f35;
   height: 80px;
   width: 100%;
   transition: 0.3s;
   z-index: 99;
 }
+.is-fixed img,
+.is-fixed p,
+.is-fixed span {
+  filter: invert(1);
+}
 
+.p-article__vision {
+  margin: 0 auto;
+  width: 45%;
+}
+.p-article__vision h3 {
+  font-size: 2.4rem;
+  font-family: "Noto Sans JP", sans-serif;
+  letter-spacing: 0em;
+}
+.p-article__vision p {
+  margin-top: 22px;
+}
+.p-article__ceo {
+  height: 1000px;
+  margin-top: 129px;
+  position: relative;
+}
+.p-article__ceo-message {
+  position: absolute;
+  background-color: #f0f0f0;
+  width: 70%;
+  right: 0;
+  margin-top: 13%;
+}
+.p-article__ceo-message h2 {
+  margin-top: 92px;
+  margin-left: 24%;
+}
+.p-article__ceo-message p {
+  margin-left: 24%;
+  margin-right: 23%;
+  margin-bottom: 91px;
+}
+.p-article__ceo img {
+  position: absolute;
+  width: 38%;
+  z-index: 2;
+  object-fit: none;
+  object-position: 46% 58%;
+  zoom: 62%;
+}
 .p-article__aboutus {
   margin-top: 96px;
   padding: 113px 0;
@@ -482,13 +527,43 @@ select {
   height: 760px;
 }
 .p-fv__wrapper {
-  height: 84%;
-  width: 76.4%;
   background-image: url(../../画像/img/the-honest-company-uM-WXMr-1.png);
+  height: 84%;
+}
+.p-fv::after {
+  height: 748px;
+}
+.p-fv__tex {
+  top: 280px;
+  right: 23.5%;
+}
+
+.p-fv2 {
+  height: 494px;
+}
+.p-fv2 h1 {
+  margin-top: 10px;
+}
+.p-fv2__wrapper {
+  background-image: url(../../画像/img/jacek-dylag-PMxT-1.png);
+  height: 64%;
+}
+.p-fv2::after {
+  height: 400px;
+}
+.p-fv2__tex {
+  top: 150px;
+  right: 27.5%;
+}
+
+.p-fv__wrapper,
+.p-fv2__wrapper {
+  width: 76.4%;
   background-size: cover;
   background-position: center 0;
 }
-.p-fv::after {
+.p-fv::after,
+.p-fv2::after {
   content: "";
   display: block;
   position: absolute;
@@ -496,25 +571,24 @@ select {
   right: 0;
   background-color: #222;
   width: 54%;
-  height: 748px;
   z-index: -1;
 }
-.p-fv__tex {
+.p-fv__tex,
+.p-fv2__tex {
   position: absolute;
-  top: 280px;
-  right: 23.5%;
   transform: translate(50%, -50%);
   color: #fff;
 }
-.p-fv__p1 {
-  margin-top: 66px;
+.p-fv__p1,
+.p-fv2__p1 {
   font-size: 20px;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: bold;
   line-height: 1.25;
   color: #fff;
 }
-.p-fv__p2 {
+.p-fv__p2,
+.p-fv2__p2 {
   font-size: 20px;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: bold;

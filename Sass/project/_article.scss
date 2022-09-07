@@ -1,6 +1,51 @@
 @use "../global" as *;
 
 .p-article {
+  &__vision {
+    margin: 0 auto;
+    width: 45%;
+    h3 {
+      font-size: 2.4rem;
+      font-family: $ff2;
+      letter-spacing: 0em;
+    }
+    p {
+      margin-top: 22px;
+    }
+  }
+  &__ceo {
+    height: 1000px;
+    margin-top: 129px;
+    position: relative;
+    &-message {
+      position: absolute;
+      background-color: #f0f0f0;
+      width: 70%;
+      right: 0;
+      margin-top: 13%;
+
+      h2 {
+        margin-top: 92px;
+        margin-left: 24%;
+      }
+
+      p {
+        margin-left: 24%;
+        margin-right: 23%;
+        margin-bottom: 91px;
+      }
+    }
+    img {
+      position: absolute;
+      width: 38%;
+
+      z-index: 2;
+      object-fit: none;
+      object-position: 46% 58%;
+      zoom: 62%;
+    }
+  }
+
   &__aboutus {
     margin-top: 96px;
     padding: 113px 0;
