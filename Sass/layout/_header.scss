@@ -9,11 +9,21 @@
     padding: 23px 3%;
     position: absolute;
     z-index: 99;
-    @include tab {
-      padding: 40px 3%;
-    }
+    margin-right: 3%;
     img {
       width: 74%;
+    }
+    @include tab {
+      padding: 23px 3%;
+      img {
+        width: 48%;
+      }
+    }
+    @include sp {
+      padding: 10px 3%;
+      img {
+        width: 55%;
+      }
     }
 
     &__left {
@@ -25,6 +35,10 @@
       &-p {
         color: $white;
         margin-left: 97px;
+        @include sp {
+          margin-left: 111%;
+          margin-right: 7%;
+        }
         font-size: 0.5rem;
         line-height: 1;
       }

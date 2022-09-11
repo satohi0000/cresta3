@@ -10,8 +10,12 @@
   text-align: center;
   font-weight: bold;
   text-align: center;
+
   &__submit {
     text-align: center;
+    @include sp {
+      margin-top: 40px;
+    }
   }
 }
 
@@ -47,10 +51,11 @@
   position: absolute;
   width: 85px;
   height: 50px;
-  z-index: 98;
+  z-index: 9999;
   cursor: pointer;
-  top: 38%;
+  margin-top: 20px;
   right: 5%;
+  margin-right: 3%;
   padding: 0 17px 0 0;
   span {
     position: absolute;

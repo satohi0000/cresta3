@@ -3,31 +3,75 @@
 .p-article {
   &__form {
     margin-top: 70px;
-    p {
+
+    > p {
       line-height: 1.7;
-      font-size: 1.27rem;
+      font-size: 1.6rem;
+      width: 100%;
     }
     label {
       margin-top: 3px;
     }
+    @include tab {
+      margin-top: 252px;
+      margin-left: 51px;
+      > p {
+        line-height: 1.5;
+        width: 95%;
+        font-size: 1.5rem;
+        letter-spacing: 0.07em;
+      }
+    }
+    @include sp {
+      margin-top: 0px;
+      margin-left: 15px;
+    }
   }
   &__company {
     margin-bottom: 115px;
+    @include tab {
+      margin-bottom: 0px;
+    }
+    @include sp {
+      margin-top: 108px;
+    }
+
     h2 {
       border-bottom: 1px solid #333333;
+      @include tab {
+        margin-left: 32px;
+      }
+      @include sp {
+        margin-left: 18px;
+      }
     }
     dl {
       display: flex;
       width: 73%;
+      @include tab {
+        width: 92%;
+      }
+      @include tab {
+        width: 96%;
+      }
       flex-wrap: wrap;
       margin: 0 0 0 auto;
     }
     dt {
       width: 18%;
+      @include sp {
+        width: 45%;
+        line-height: 3.7;
+      }
       border-bottom: 1px solid #333333;
     }
     dd {
       width: 82%;
+      @include sp {
+        width: 55%;
+        font-size: 1.4rem;
+        line-height: 4.2;
+      }
       border-bottom: 1px solid #333333;
     }
   }
@@ -35,6 +79,12 @@
     margin: 0 auto;
     margin-top: 60px;
     width: 45%;
+    @include tab {
+      width: 61%;
+    }
+    @include tab {
+      width: 92%;
+    }
     h3 {
       font-size: 2.4rem;
       font-family: $ff2;
@@ -42,11 +92,23 @@
     }
     p {
       margin-top: 22px;
+      @include tab {
+        line-height: 1.75;
+      }
+      @include sp {
+        line-height: 2;
+        font-size: 1.4rem;
+        margin-top: 30px;
+      }
     }
   }
   &__ceo {
     height: 994px;
     margin-top: 129px;
+    @include tab {
+      height: 870px;
+      margin-top: 88px;
+    }
     position: relative;
     &-message {
       position: absolute;
@@ -54,26 +116,55 @@
       width: 70%;
       right: 0;
       margin-top: 13%;
+      @include tab {
+        margin-top: 16%;
+      }
+      @include sp {
+        margin-top: 36%;
+        margin-right: 5%;
+        width: 96%;
+      }
 
       h2 {
         margin-top: 89px;
         margin-left: 24%;
+        @include tab {
+          margin-left: 11%;
+        }
       }
 
       p {
         margin-left: 24%;
         margin-right: 23%;
         margin-bottom: 91px;
+        @include tab {
+          margin-left: 9%;
+          margin-right: 12%;
+          line-height: 1.7;
+        }
+        @include sp {
+          font-size: 1.4rem;
+          margin-left: 12%;
+          margin-right: 7%;
+          line-height: 1.98;
+        }
       }
     }
     img {
       position: absolute;
       width: 38%;
-
       z-index: 2;
       object-fit: none;
       object-position: 46% 58%;
       zoom: 62%;
+      @include tab {
+        margin-left: 40px;
+        width: 42%;
+      }
+      @include sp {
+        margin-left: 0;
+        width: 91%;
+      }
     }
   }
 

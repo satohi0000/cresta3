@@ -10,6 +10,12 @@
     overflow-y: scroll;
     border: 1px solid #333;
     height: 252px;
+    @include tab {
+      height: 179px;
+    }
+    @include sp {
+      height: 226px;
+    }
     margin-top: 6px;
   }
 }

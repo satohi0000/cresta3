@@ -23,29 +23,29 @@
     <title>contact</title>
   </head>
   <body>
-    <header class="l-header">
-      <div class="l-header__inner">
-        <a href="#">
-          <img src="../画像/img/site-logo-1.png" alt="site-logo" />
-        </a>
-        <nav class="l-header-nav">
-          <ul class="p-nav-list">
-            <li class="p-nav-list-item1"><a href="#about">Concept</a></li>
-            <li class="p-nav-list-item1"><a href="#Service">Service</a></li>
-            <li class="p-nav-list-item1"><a href="#Works">Works</a></li>
-            <li class="p-nav-list-item1"><a href="#Contact">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="p-mask"></div>
-        <div id="c-BTN1" class="c-ham-btn">
-          <span></span>
-          <span></span>
-          <span></span>
-          <p class="l-header__inner__right-p">MENU</p>
-        </div>
-      </div>
-    </header>
     <main>
+      <header class="l-header">
+        <div class="l-header__inner">
+          <a href="#">
+            <img src="../画像/img/site-logo-1.png" alt="site-logo" />
+          </a>
+          <nav class="l-header-nav">
+            <ul class="p-nav-list">
+              <li class="p-nav-list-item1"><a href="#about">Concept</a></li>
+              <li class="p-nav-list-item1"><a href="#Service">Service</a></li>
+              <li class="p-nav-list-item1"><a href="#Works">Works</a></li>
+              <li class="p-nav-list-item1"><a href="#Contact">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="p-mask"></div>
+          <div id="c-BTN1" class="c-ham-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <p class="l-header__inner__right-p">MENU</p>
+          </div>
+        </div>
+      </header>
       <div class="l-contents">
         <div class="p-fv2">
           <div class="p-fv2__wrapper2"></div>
@@ -53,6 +53,7 @@
             <h1>CONTACT</h1>
             <p class="p-fv2__p1">お問い合わせ</p>
           </div>
+          <span>SCROLL</span>
         </div>
         <div class="p-article__form f-wrapper2">
           <p>
@@ -64,21 +65,21 @@
               <p class="c-mark">必須</p>
             </div>
             <div class="c-check">
-              <input type="checkbox" class="c-check__select" />
-
-              <label for="check1">制作依頼</label>
-
-              <input type="checkbox" class="c-check__select" />
-
-              <label for="check2">採用</label>
-
-              <input type="checkbox" class="c-check__select" />
-
-              <label for="check3">IR</label>
-
-              <input type="checkbox" class="c-check__select" />
-
-              <label for="check4">その他</label>
+              <label for="check1"
+                ><input
+                  type="checkbox"
+                  class="c-check__select"
+                />制作依頼</label
+              >
+              <label for="check2"
+                ><input type="checkbox" class="c-check__select" />採用</label
+              >
+              <label for="check3"
+                ><input type="checkbox" class="c-check__select" />IR</label
+              >
+              <label for="check4">
+                <input type="checkbox" class="c-check__select" />その他</label
+              >
             </div>
           </form>
           <form class="c-form__name1">
@@ -151,29 +152,23 @@
           >
 
           <div class="c-button__submit">
-            <button class="c-form__button" type="submit">送信</button>
+            <a href="#"
+              ><button class="c-form__button" type="submit">送信</button></a
+            >
           </div>
         </div>
       </div>
-    </main>
 
-    <footer class="l-footer">
-      <p>©︎crest.design all rights reserved</p>
-    </footer>
-    <script
-      async
-      src="https://platform.twitter.com/widgets.js"
-      charset="utf-8"
-    ></script>
-    <script src="../js/jquery-3.6.0.js"></script>
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
-    ></script>
-    <script src="../js/style.js"></script>
+      <footer class="l-footer">
+        <p>©︎crest.design all rights reserved</p>
+      </footer>
+      <script
+        async
+        src="https://platform.twitter.com/widgets.js"
+        charset="utf-8"
+      ></script>
+      <script src="../js/jquery-3.6.0.js"></script>
+      <script src="../js/style.js"></script>
+    </main>
   </body>
 </html>

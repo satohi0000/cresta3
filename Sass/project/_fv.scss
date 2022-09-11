@@ -17,22 +17,70 @@
 
 .p-fv2 {
   height: 494px;
+  @include tab {
+    height: 608px;
+  }
+  @include sp {
+    height: 443px;
+  }
   h1 {
     margin-top: 10px;
+  }
+  > span {
+    display: none;
+    top: 42px;
+    left: 12px;
+    font-weight: bold;
+    font-family: $ff1;
+    font-size: 1.3rem;
+    &::after {
+      position: absolute;
+      content: "";
+      top: 100%;
+      right: 48%;
+      width: 1px;
+      height: 118px;
+      background-color: black;
+      z-index: 500;
+    }
+    @include sp {
+      display: block;
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
+      position: relative;
+    }
   }
   &__wrapper {
     background-image: url(../../画像/img/jacek-dylag-PMxT-1.png);
     height: 78%;
     background-position: center 0px;
+    @include tab {
+      height: 528px;
+    }
+    @include sp {
+      height: 269px;
+    }
   }
   &__wrapper2 {
     background-image: url(../../画像/img/photo-of-people-looking-on-tablet-1.png);
     height: 388px;
+    @include tab {
+      height: 530px;
+    }
+    @include sp {
+      height: 269px;
+    }
     background-position: center 0px;
   }
 
   &::after {
-    height: 453px;
+    height: 451px;
+    @include tab {
+      height: 614px;
+    }
+    @include sp {
+      height: 446px;
+    }
   }
   &__tex,
   &__tex2 {
@@ -40,13 +88,26 @@
       letter-spacing: 0.06em;
     }
     top: 205px;
-    margin-right: 5%;
+    @include tab {
+      top: 180px;
+      margin-right: 8.5%;
+    }
+    margin-right: 6.5%;
   }
   &__tex {
     right: 24.5%;
+    @include tab {
+      right: 16.5%;
+    }
+    @include sp {
+      width: 313px;
+    }
   }
   &__tex2 {
     right: 19.5%;
+    @include sp {
+      right: 38.5%;
+    }
   }
 }
 
@@ -71,9 +132,11 @@
   &__tex,
   &__tex2 {
     position: absolute;
-
     transform: translate(50%, -50%);
     color: #fff;
+    @include tab {
+      transform: translate(25%, -50%);
+    }
   }
   &__p1 {
     font-size: 20px;
