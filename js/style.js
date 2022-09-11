@@ -9,8 +9,26 @@ $("#c-BTN1").on("click", function () {
 $(function () {
   var $win = $(window),
     $fv = $(".p-fv"),
+    $fv2 = $(".p-fv2"),
     $header = $(".l-header");
   (fvHeight = $fv.outerHeight()), (fixedClass = "is-fixed");
+
+  $win.on("load scroll", function () {
+    var value = $(this).scrollTop();
+    if ($win.width() > 768)
+      if (value > fvHeight) {
+        $header.addClass(fixedClass);
+      } else {
+        $header.removeClass(fixedClass);
+      }
+  });
+});
+
+$(function () {
+  var $win = $(window),
+    $fv2 = $(".p-fv2"),
+    $header = $(".l-header");
+  (fvHeight = $fv2.outerHeight()), (fixedClass = "is-fixed");
 
   $win.on("load scroll", function () {
     var value = $(this).scrollTop();

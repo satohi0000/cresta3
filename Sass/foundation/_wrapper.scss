@@ -1,6 +1,11 @@
 @use "../global" as *;
 
 .f-wrapper {
+  max-width: $inner2;
+  margin: 0 auto;
+}
+
+.f-wrapper2 {
   max-width: $inner1;
   margin: 0 auto;
 }

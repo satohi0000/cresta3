@@ -22,23 +22,41 @@
   }
   &__wrapper {
     background-image: url(../../画像/img/jacek-dylag-PMxT-1.png);
-    height: 64%;
+    height: 78%;
+    background-position: center 0px;
   }
+  &__wrapper2 {
+    background-image: url(../../画像/img/photo-of-people-looking-on-tablet-1.png);
+    height: 388px;
+    background-position: center 0px;
+  }
+
   &::after {
-    height: 400px;
+    height: 453px;
+  }
+  &__tex,
+  &__tex2 {
+    h1 {
+      letter-spacing: 0.06em;
+    }
+    top: 205px;
+    margin-right: 5%;
   }
   &__tex {
-    top: 150px;
-    right: 27.5%;
+    right: 24.5%;
+  }
+  &__tex2 {
+    right: 19.5%;
   }
 }
 
 .p-fv,
 .p-fv2 {
-  &__wrapper {
+  &__wrapper,
+  &__wrapper2 {
     width: 76.4%;
     background-size: cover;
-    background-position: center 0;
+    background-repeat: no-repeat;
   }
   &::after {
     content: "";
@@ -50,7 +68,8 @@
     width: 54%;
     z-index: -1;
   }
-  &__tex {
+  &__tex,
+  &__tex2 {
     position: absolute;
 
     transform: translate(50%, -50%);

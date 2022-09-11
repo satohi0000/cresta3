@@ -1,9 +1,10 @@
 @use "../global" as *;
 
 .c-gmap {
-  width: 75% !important;
-  height: 300px;
-  margin-bottom: 45px;
+  width: 100% !important;
+  height: 360px;
+
+  margin-top: 37px;
   @include tab {
     width: 100% !important;
     padding: 10px 0px 0 3px;

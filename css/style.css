@@ -29,20 +29,36 @@ body h4 {
   line-height: 4.3;
   letter-spacing: 0em;
 }
+body h5 {
+  font-size: 1.6rem;
+  line-height: 1.875;
+  letter-spacing: 0.004em;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
 body p {
   font-size: 1.6rem;
   line-height: 2;
   letter-spacing: 0em;
 }
 body dt {
-  font-size: 1rem;
-  line-height: 0.7;
-  letter-spacing: 0.015em;
+  font-size: 1.6rem;
+  line-height: 3.4875;
+  letter-spacing: 0.004em;
+  font-weight: bold;
+  font-family: "Noto Sans JP", sans-serif;
 }
 body dd {
-  font-size: 1.4rem;
-  line-height: 2.6;
+  font-size: 1.6rem;
+  line-height: 3.4875;
   letter-spacing: 0.004em;
+  font-family: "Noto Sans JP", sans-serif;
+}
+body label {
+  font-size: 1.6rem;
+  line-height: 5.875;
+  letter-spacing: 0.004em;
+  line-height: 1;
 }
 
 html {
@@ -220,7 +236,12 @@ select {
 }
 
 .f-wrapper {
-  max-width: 1100px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.f-wrapper2 {
+  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -228,6 +249,7 @@ select {
   width: 100%;
   background-color: #525252;
   padding: 10px 0;
+  margin-top: 20px;
 }
 .l-footer p {
   font-size: 10px;
@@ -282,8 +304,39 @@ select {
   filter: invert(1);
 }
 
+.p-article__form {
+  margin-top: 70px;
+}
+.p-article__form p {
+  line-height: 1.7;
+  font-size: 1.27rem;
+}
+.p-article__form label {
+  margin-top: 3px;
+}
+.p-article__company {
+  margin-bottom: 115px;
+}
+.p-article__company h2 {
+  border-bottom: 1px solid #333333;
+}
+.p-article__company dl {
+  display: flex;
+  width: 73%;
+  flex-wrap: wrap;
+  margin: 0 0 0 auto;
+}
+.p-article__company dt {
+  width: 18%;
+  border-bottom: 1px solid #333333;
+}
+.p-article__company dd {
+  width: 82%;
+  border-bottom: 1px solid #333333;
+}
 .p-article__vision {
   margin: 0 auto;
+  margin-top: 60px;
   width: 45%;
 }
 .p-article__vision h3 {
@@ -295,7 +348,7 @@ select {
   margin-top: 22px;
 }
 .p-article__ceo {
-  height: 1000px;
+  height: 994px;
   margin-top: 129px;
   position: relative;
 }
@@ -307,7 +360,7 @@ select {
   margin-top: 13%;
 }
 .p-article__ceo-message h2 {
-  margin-top: 92px;
+  margin-top: 89px;
   margin-left: 24%;
 }
 .p-article__ceo-message p {
@@ -546,21 +599,37 @@ select {
 }
 .p-fv2__wrapper {
   background-image: url(../../画像/img/jacek-dylag-PMxT-1.png);
-  height: 64%;
+  height: 78%;
+  background-position: center 0px;
+}
+.p-fv2__wrapper2 {
+  background-image: url(../../画像/img/photo-of-people-looking-on-tablet-1.png);
+  height: 388px;
+  background-position: center 0px;
 }
 .p-fv2::after {
-  height: 400px;
+  height: 453px;
+}
+.p-fv2__tex, .p-fv2__tex2 {
+  top: 205px;
+  margin-right: 5%;
+}
+.p-fv2__tex h1, .p-fv2__tex2 h1 {
+  letter-spacing: 0.06em;
 }
 .p-fv2__tex {
-  top: 150px;
-  right: 27.5%;
+  right: 24.5%;
+}
+.p-fv2__tex2 {
+  right: 19.5%;
 }
 
-.p-fv__wrapper,
-.p-fv2__wrapper {
+.p-fv__wrapper, .p-fv__wrapper2,
+.p-fv2__wrapper,
+.p-fv2__wrapper2 {
   width: 76.4%;
   background-size: cover;
-  background-position: center 0;
+  background-repeat: no-repeat;
 }
 .p-fv::after,
 .p-fv2::after {
@@ -573,8 +642,9 @@ select {
   width: 54%;
   z-index: -1;
 }
-.p-fv__tex,
-.p-fv2__tex {
+.p-fv__tex, .p-fv__tex2,
+.p-fv2__tex,
+.p-fv2__tex2 {
   position: absolute;
   transform: translate(50%, -50%);
   color: #fff;
@@ -624,43 +694,45 @@ select {
   }
 }
 
-#c-form {
-  width: 100%;
-  height: 25px;
-}
-#c-form-content {
-  width: 100%;
-  height: 170px;
-}
-#c-form_check {
-  font-size: 14px;
-  margin-right: 7px;
-}
-#c-form_check2 {
-  margin-left: 17px;
-  margin-right: 7px;
-  margin-left: 0;
-}
-@media (max-width: 768px) {
-  #c-form_check2 {
-    margin-left: 0;
-    margin-right: 9px;
-  }
-}
-#c-form_check3 {
-  margin-left: 26px;
-  margin-right: 7px;
-}
-@media (max-width: 768px) {
-  #c-form_check3 {
-    margin-left: 0;
-    margin-right: 9px;
-  }
+input,
+textarea {
+  resize: none;
+  appearance: none;
+  outline: none;
 }
 
+#c-form {
+  width: 100%;
+  height: 35px;
+  margin-top: 8px;
+}
+#c-form-content {
+  margin-top: 8px;
+  width: 100%;
+  height: 205px;
+}
+#c-form_check2 {
+  border: 1px solid #333;
+  margin-right: 8px;
+  width: 18px;
+  height: 18px;
+  vertical-align: -3px;
+}
+#c-form_check2:checked {
+  background-color: #333;
+  border: 4px solid #fff;
+  box-shadow: 0 0 0 1px #333;
+}
+
+.c-form__title {
+  display: flex;
+}
+.c-form__title p {
+  text-align: center;
+}
 .c-form__input {
   margin: 0px auto;
-  margin-top: 100px;
+  margin-top: 56px;
   max-width: 700px;
   padding-right: 11px;
 }
@@ -669,11 +741,14 @@ select {
     margin-left: 10px;
   }
 }
-.c-form__name {
-  margin-top: 30px;
+.c-form__name1 {
+  margin-top: 42px;
+}
+.c-form__name2 {
+  margin-top: 44px;
 }
 .c-form__phone {
-  margin-top: 21px;
+  margin-top: 43px;
 }
 @media (max-width: 768px) {
   .c-form__phone {
@@ -681,7 +756,7 @@ select {
   }
 }
 .c-form__email {
-  margin-top: 20px;
+  margin-top: 46px;
 }
 @media (max-width: 768px) {
   .c-form__email {
@@ -689,7 +764,7 @@ select {
   }
 }
 .c-form__content {
-  margin-top: 19px;
+  margin-top: 44px;
   margin-bottom: 30px;
 }
 @media (max-width: 768px) {
@@ -699,24 +774,15 @@ select {
 }
 .c-form__button {
   text-align: center;
-  background-color: #f7d43f;
-  padding: 11px 0px;
-  border-radius: 35px;
-  margin: 0 auto;
+  background-color: #000000;
+  color: #fff;
+  padding: 0 60px;
+  margin: 12px auto;
   border: none;
   font-size: 19px;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: bold;
-}
-.c-form__check {
-  line-height: 1;
-}
-@media (max-width: 768px) {
-  .c-form__check {
-    display: flex;
-    flex-direction: column;
-    line-height: 0.5;
-  }
+  margin-bottom: 105px;
 }
 
 .c-button {
@@ -728,6 +794,10 @@ select {
   display: block;
   text-align: center;
   font-weight: bold;
+  text-align: center;
+}
+.c-button__submit {
+  text-align: center;
 }
 
 #c-BTN1.active {
@@ -782,9 +852,9 @@ select {
 }
 
 .c-gmap {
-  width: 75% !important;
-  height: 300px;
-  margin-bottom: 45px;
+  width: 100% !important;
+  height: 360px;
+  margin-top: 37px;
 }
 @media (max-width: 768px) {
   .c-gmap {
@@ -806,6 +876,115 @@ select {
   font-size: 14px;
   line-height: 1.5;
   letter-spacing: 0em;
+}
+
+.c-mark {
+  font-size: 1.2rem;
+  letter-spacing: 0.04em;
+  width: 34px;
+  background-color: #525252;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+
+.c-policy {
+  width: 100%;
+}
+.c-policy p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  overflow-y: scroll;
+  border: 1px solid #333;
+  height: 252px;
+  margin-top: 6px;
+}
+
+.c-check {
+  display: flex;
+  margin-top: 11px;
+  margin-left: 12px;
+}
+.c-check label {
+  margin-top: 11px;
+  margin-right: 50px;
+}
+.c-check__select {
+  width: 20px;
+  height: 20px;
+  border: solid 1px #333;
+  border-radius: 50%;
+  vertical-align: -4px;
+  margin: 8px 10px 0 0;
+}
+.c-check__select:checked {
+  background-color: #333;
+  border: 4px solid #fff;
+  box-shadow: 0 0 0 1px #333;
+}
+.c-check__select:hover {
+  cursor: pointer;
+}
+
+.ECM_CheckboxInput {
+  padding: 5% 18%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.ECM_CheckboxInput-Input {
+  margin: 0;
+  width: 0;
+  opacity: 0;
+}
+
+.ECM_CheckboxInput:hover > .ECM_CheckboxInput-DummyInput {
+  background: #dddddd !important;
+  border: solid 2px #333333;
+}
+
+.ECM_CheckboxInput-Input:focus + .ECM_CheckboxInput-DummyInput {
+  background: #dddddd !important;
+  border: solid 2px #333333;
+}
+
+.ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput {
+  border: solid 2px #333333;
+  background: #ffffff;
+}
+
+.ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJmZWF0aGVyIGZlYXRoZXItY2hlY2siPjxwb2x5bGluZSBwb2ludHM9IjIwIDYgOSAxNyA0IDEyIj48L3BvbHlsaW5lPjwvc3ZnPg==") no-repeat center;
+  background-size: contain;
+}
+
+.ECM_CheckboxInput-DummyInput {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 18px;
+  height: 18px;
+  border: solid 2px #888888;
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+.ECM_CheckboxInput-LabelText {
+  margin-left: 12px;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {

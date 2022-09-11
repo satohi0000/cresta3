@@ -9,6 +9,10 @@
   display: block;
   text-align: center;
   font-weight: bold;
+  text-align: center;
+  &__submit {
+    text-align: center;
+  }
 }
 
 #c-BTN1 {

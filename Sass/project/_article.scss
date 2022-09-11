@@ -1,8 +1,39 @@
 @use "../global" as *;
 
 .p-article {
+  &__form {
+    margin-top: 70px;
+    p {
+      line-height: 1.7;
+      font-size: 1.27rem;
+    }
+    label {
+      margin-top: 3px;
+    }
+  }
+  &__company {
+    margin-bottom: 115px;
+    h2 {
+      border-bottom: 1px solid #333333;
+    }
+    dl {
+      display: flex;
+      width: 73%;
+      flex-wrap: wrap;
+      margin: 0 0 0 auto;
+    }
+    dt {
+      width: 18%;
+      border-bottom: 1px solid #333333;
+    }
+    dd {
+      width: 82%;
+      border-bottom: 1px solid #333333;
+    }
+  }
   &__vision {
     margin: 0 auto;
+    margin-top: 60px;
     width: 45%;
     h3 {
       font-size: 2.4rem;
@@ -14,7 +45,7 @@
     }
   }
   &__ceo {
-    height: 1000px;
+    height: 994px;
     margin-top: 129px;
     position: relative;
     &-message {
@@ -25,7 +56,7 @@
       margin-top: 13%;
 
       h2 {
-        margin-top: 92px;
+        margin-top: 89px;
         margin-left: 24%;
       }
 

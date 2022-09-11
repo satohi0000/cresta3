@@ -1,40 +1,47 @@
 @use "../global" as *;
 
+input,
+textarea {
+  resize: none;
+  appearance: none;
+  outline: none;
+}
+
 #c-form {
   width: 100%;
-  height: 25px;
+  height: 35px;
+  margin-top: 8px;
   &-content {
+    margin-top: 8px;
     width: 100%;
-    height: 170px;
+    height: 205px;
   }
   &_check {
-    font-size: 14px;
-    margin-right: 7px;
-
     &2 {
-      margin-left: 17px;
-      margin-right: 7px;
-      margin-left: 0;
-      @include tab {
-        margin-left: 0;
-        margin-right: 9px;
-      }
-    }
-    &3 {
-      margin-left: 26px;
-      margin-right: 7px;
-      @include tab {
-        margin-left: 0;
-        margin-right: 9px;
+      border: 1px solid #333;
+      margin-right: 8px;
+      width: 18px;
+      height: 18px;
+      vertical-align: -3px;
+      &:checked {
+        background-color: #333;
+        border: 4px solid #fff;
+        box-shadow: 0 0 0 1px #333;
       }
     }
   }
 }
 
 .c-form {
+  &__title {
+    display: flex;
+    p {
+      text-align: center;
+    }
+  }
   &__input {
     margin: 0px auto;
-    margin-top: 100px;
+    margin-top: 56px;
     max-width: 700px;
     padding-right: 11px;
     @include tab {
@@ -43,22 +50,28 @@
   }
 
   &__name {
-    margin-top: 30px;
+    &1 {
+      margin-top: 42px;
+    }
+    &2 {
+      margin-top: 44px;
+    }
   }
+
   &__phone {
-    margin-top: 21px;
+    margin-top: 43px;
     @include tab {
       margin-top: 22px;
     }
   }
   &__email {
-    margin-top: 20px;
+    margin-top: 46px;
     @include tab {
       margin-top: 22px;
     }
   }
   &__content {
-    margin-top: 19px;
+    margin-top: 44px;
     margin-bottom: 30px;
     @include tab {
       margin-top: 19px;
@@ -66,21 +79,14 @@
   }
   &__button {
     text-align: center;
-    background-color: #f7d43f;
-    padding: 11px 0px;
-    border-radius: 35px;
-    margin: 0 auto;
+    background-color: #000000;
+    color: #fff;
+    padding: 0 60px;
+    margin: 12px auto;
     border: none;
     font-size: 19px;
     font-family: $ff2;
     font-weight: bold;
-  }
-  &__check {
-    line-height: 1;
-    @include tab {
-      display: flex;
-      flex-direction: column;
-      line-height: 0.5;
-    }
+    margin-bottom: 105px;
   }
 }
