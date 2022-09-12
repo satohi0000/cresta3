@@ -163,13 +163,17 @@
       }
       @include sp {
         margin-left: 0;
-        width: 91%;
+        width: 77%;
       }
     }
   }
 
   &__aboutus {
     margin-top: 96px;
+    @include tab {
+      margin-top: 49px;
+      padding: 43px 0;
+    }
     padding: 113px 0;
     background-image: url(../../画像/img/skyline-1.png);
     background-size: cover;
@@ -186,40 +190,95 @@
     }
     &-box {
       background-color: $white;
-      height: 387px;
-      max-width: 590px;
-      margin-left: 50px;
+      padding: 2% 0%;
+      max-width: 82%;
+      margin: 0 auto;
+      @include sp {
+        padding: 2% 4%;
+      }
+
       h2 {
         padding-top: 19px;
         padding-left: 30px;
+        @include sp {
+          padding-left: 10px;
+        }
       }
       p {
         padding-left: 30px;
         font-family: $ff2;
         width: 90%;
+        @include sp {
+          width: 100%;
+          padding-left: 12px;
+          font-size: 1.45rem;
+          line-height: 1.9;
+        }
       }
       button {
         margin: 30px 0 30px 30px;
+        @include sp {
+          margin: 21px 0 30px 11px;
+        }
       }
     }
   }
   &__2colum {
     padding-bottom: 56px;
+    @include tab {
+      margin-left: 30px;
+      flex-direction: column;
+      p {
+        padding-top: 19px;
+        @include tab {
+          padding-top: 0;
+        }
+      }
+    }
+    @include sp {
+      margin-left: 0px;
+      padding-bottom: 49px;
+    }
     p {
       margin-top: 17px;
       margin-bottom: 3px;
+      @include sp {
+        margin-top: 0px;
+      }
     }
     &-left,
     &-right {
       width: 47%;
       button {
         margin-top: 22px;
+        @include sp {
+          margin-top: 25px;
+        }
+      }
+      @include tab {
+        margin-top: 19px;
+        width: 70%;
+      }
+      @include sp {
+        margin-top: 32px;
+        margin-left: 3%;
+        width: 95%;
       }
     }
 
     &-right {
       margin-left: 6%;
       width: 50%;
+      @include tab {
+        margin-left: 0;
+        margin-top: 53px;
+        width: 70%;
+      }
+      @include sp {
+        margin-top: 12px;
+        width: 95%;
+        margin-left: 3%;
+      }
     }
     &-bg {
       padding-top: 20px;
@@ -227,6 +286,9 @@
     }
     img {
       height: 350px;
+      @include sp {
+        height: 245px;
+      }
     }
     &2 {
       padding-bottom: 110px;
@@ -245,10 +307,24 @@
       &-right {
         width: 50%;
         margin-left: 8%;
+        @include tab {
+          width: 68%;
+          margin-left: 4%;
+        }
+        @include sp {
+          width: 92%;
+        }
         img {
           margin-top: 38px;
 
           height: 384px;
+          @include tab {
+            margin-top: 22px;
+            height: 351px;
+          }
+          @include sp {
+            height: 234px;
+          }
         }
       }
       &-bg {
@@ -261,27 +337,83 @@
   &__2colum2 {
     display: flex;
     padding-top: 34px;
+    @include tab {
+      padding-top: 0px;
+      flex-direction: column;
+    }
+  }
+  &__2colum2 {
+    @include tab {
+      flex-direction: column-reverse;
+      padding-bottom: 70px;
+      &-left {
+        margin-left: 27px;
+        width: 66%;
+        h2 {
+          margin-top: 0;
+        }
+        @include sp {
+          margin-left: 16px;
+          width: 90%;
+        }
+      }
+    }
+    @include sp {
+      padding-bottom: 31px;
+    }
   }
   &__latest {
     &-box {
       margin-top: 32px;
+      @include tab {
+        margin-left: 28px;
+        margin-top: 0;
+      }
+      @include sp {
+        margin-left: 13px;
+        margin-top: 18px;
+      }
       dl {
-        width: 700px;
+        width: 100%;
         margin-left: inherit;
+        @include tab {
+          margin-left: 0;
+          margin-top: 10px;
+          width: 95%;
+        }
       }
       dt {
         margin-top: 10px;
         &:nth-of-type(2),
         &:nth-of-type(3) {
-          margin-top: 36px;
+          margin-top: 29px;
+        }
+        @include tab {
+          margin-top: 0;
+          line-height: 0.5;
+        }
+        @include sp {
+          font-size: 0.6rem;
         }
       }
       dd {
         border-bottom: 1px solid #dddddd;
+        @include tab {
+          font-size: 1.4rem;
+          line-height: 2.8;
+        }
+        @include sp {
+          font-size: 1.3rem;
+          line-height: 2.3;
+        }
       }
       button {
         margin-left: inherit;
         margin-top: 35px;
+        @include tab {
+          margin-left: 0;
+          margin-top: 28px;
+        }
       }
     }
   }

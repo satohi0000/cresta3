@@ -2,16 +2,34 @@
 
 .p-fv {
   height: 760px;
+  @include tab {
+    height: 1058px;
+  }
+  @include sp {
+    height: 696px;
+  }
   &__wrapper {
     background-image: url(../../画像/img/the-honest-company-uM-WXMr-1.png);
     height: 84%;
   }
   &::after {
     height: 748px;
+    @include sp {
+      height: 671px;
+    }
   }
   &__tex {
     top: 280px;
     right: 23.5%;
+    @include tab {
+      top: 458px;
+      right: 15.5%;
+    }
+    @include sp {
+      top: 300px;
+      right: 15.5%;
+      margin-right: 5%;
+    }
   }
 }
 
@@ -56,6 +74,7 @@
     background-position: center 0px;
     @include tab {
       height: 528px;
+      background-position: 56%;
     }
     @include sp {
       height: 269px;
@@ -79,7 +98,7 @@
       height: 614px;
     }
     @include sp {
-      height: 446px;
+      height: 367px;
     }
   }
   &__tex,
@@ -118,6 +137,7 @@
     width: 76.4%;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 52%;
   }
   &::after {
     content: "";
@@ -128,6 +148,9 @@
     background-color: #222;
     width: 54%;
     z-index: -1;
+    @include tab {
+      width: 73%;
+    }
   }
   &__tex,
   &__tex2 {
@@ -137,9 +160,17 @@
     @include tab {
       transform: translate(25%, -50%);
     }
+    @include sp {
+      &__p1 {
+        font-size: 14px;
+      }
+    }
   }
   &__p1 {
     font-size: 20px;
+    @include sp {
+      font-size: 14px;
+    }
     font-family: $ff2;
     font-weight: bold;
     line-height: 1.25;

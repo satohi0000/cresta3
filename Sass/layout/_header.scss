@@ -1,6 +1,10 @@
 @use "../global" as *;
 
 .l-header {
+  &-nav {
+    margin-top: 246px;
+    margin-right: 8.3%;
+  }
   &__inner {
     display: flex;
     justify-content: space-between;
