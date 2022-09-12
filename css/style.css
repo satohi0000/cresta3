@@ -1425,14 +1425,14 @@ textarea {
 @media (max-width: 768px) {
   .c-gmap {
     height: 230px;
-    padding: 10px 0px 0 3px;
+    padding: 10px 0px 0 0px;
     margin-bottom: 26px;
   }
 }
 @media (max-width: 599px) {
   .c-gmap {
     height: 484px;
-    padding: 10px 0px 0 3px;
+    padding: 10px 0px 0 0px;
     margin-bottom: 32px;
   }
 }

@@ -7,12 +7,12 @@
   margin-top: 37px;
   @include tab {
     height: 230px;
-    padding: 10px 0px 0 3px;
+    padding: 10px 0px 0 0px;
     margin-bottom: 26px;
   }
   @include sp {
     height: 484px;
-    padding: 10px 0px 0 3px;
+    padding: 10px 0px 0 0px;
     margin-bottom: 32px;
   }
 }
